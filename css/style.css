@@ -9,8 +9,8 @@ nav{
     background-color: black;
 }
 
-a{
-    text-decoration: line-through;
+.a{
+    text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
     color: white;
