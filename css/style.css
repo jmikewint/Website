@@ -67,7 +67,7 @@ a:hover::after{
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 64px;
+    width: 69px;
     height: 34px;
   }
   
@@ -191,13 +191,14 @@ a:hover::after{
     margin-left: auto;
     margin-right: 0px;
 
-    width: 90px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 73px;
     border-style: solid;
     border-color:rgba(207,187,159,.1);
     border-radius: 22px;
     border-width:1px;
+}
+
+img{
+    height: auto;
+    width: 500px;
 }
