@@ -1,4 +1,8 @@
-.NavBar{
+.body{
+    background-color: black;
+}
+
+nav{
     background-color: rgba(24,23,22,.4);
     margin: auto;
     display: flex;
@@ -7,6 +11,10 @@
     padding-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px;
+    border-style: solid;
+    border-color:rgba(207,187,159,255);;
+    border-radius: 22px;
+    border-width: 1px;
 }
 
 .box{
@@ -17,24 +25,24 @@
 
 
 .a{
-    paddinging
-    padding-left: 55x;
-    padding-right: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
     color: rgba(207,187,159,255);
     font-size: 18px;
     letter-spacing: 0.5px;
+    font-size: 13px;
 }
 
 a:after{
     content: "";
     position: absolute;
     background-color: red;
-    height: 3px;
-    width: 0;
-    left: 0;
+    height: 1px;
+    width: 100%;
+    left: 2px;
     bottom: -3px;
     transition: 0.3s;
     
@@ -43,6 +51,10 @@ a:after{
 a:hover::after{
     width: 100%;
     
+}
+
+p{
+    color: white;
 }
 
 
