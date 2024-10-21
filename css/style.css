@@ -10,7 +10,16 @@ nav{
     padding-top: 100px;
 
 }
-
+.navbar{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.navbar-fixed-top{
+    top: 0;
+    border-width: 0 0 1px
+}
 .a{
     text-decoration: none;
     position: relative;
