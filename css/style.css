@@ -198,7 +198,14 @@ a:hover::after{
     border-width:1px;
 }
 
-img{
+.img{
+    margin-top: 50px;
     height: auto;
-    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+h1{
+    color: rgba(207,187,159,255);
 }
