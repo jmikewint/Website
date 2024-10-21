@@ -189,13 +189,13 @@ a:hover::after{
     background-color: rgba(24,23,22,.8);
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0px;
 
-    width: 110px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 90px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
     border-style: solid;
     border-color:rgba(207,187,159,.1);
     border-radius: 22px;
