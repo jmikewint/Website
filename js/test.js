@@ -1,9 +1,9 @@
-const paragraphs = document.querySelectorAll(".blocks_paragraph");
+const paragraphs = document.querySelectorAll(".section_paragraph");
 
 document.addEventListener("scroll", function(){
   paragraphs.forEach((paragraph) => {
     if (isInView(paragraph)){
-      paragraph.classList.add("blocks_paragraph--visible");
+      paragraph.classList.add("section_paragraph--visible");
     }
   });
 });
