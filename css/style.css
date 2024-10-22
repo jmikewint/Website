@@ -5,8 +5,14 @@
   color: white;
   background-color: rgba(14,14,14,255);
   font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(14,14,14,255);
+  background-color: rgba(14,14,14,255);
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+
 
 #bg{
   position: absolute;
@@ -14,7 +20,29 @@
   left: 0;
   bottom: 0;
   right: 0;
-  height: 600px;
+  height: 1000px;
+}
+
+.title{
+  text-align: center;
+}
+
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.HOME{
+  margin-top: 200px;
+  background-color: rgb(14, 14, 14);
+  width: 100%;
+  margin-left: 0px;
 }
 
 .our-projects{
@@ -54,9 +82,41 @@
 }
 .fill{
   display: flex;
-  justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
+}
+
+#Home,
+#SKills,
+#Projects{
+  height: 1300px;
+  margin-bottom: 190px;
+}
+
+#navi{
+  bottom: 10px;
+  width: 93%;
+  height: 50px;
+  position: absolute;
+  border-style: solid;
+  border-width: .1px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg,  rgba(207,187,159,.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(207,187,159,.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin-bottom: 10px;
+}
+
+
+
+#info1{
+  z-index: 10;
 }
 
 .fill img {
@@ -66,12 +126,7 @@
 }
 
 
-.Home{
 
-  background-color: rgb(14, 14, 14);
-  width: 100%;
-  margin-left: 0px;
-}
 
   
 
@@ -99,19 +154,14 @@
 }
 
 
-.container{
-  width: 100%;
-}
-
 .navbar{
     background-color: rgba(24,23,22,.8);
     margin-bottom: auto;
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-
     display: flex;
-    width: 490px;
+    width: 590px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 28px;
@@ -120,6 +170,7 @@
     border-color:rgba(207,187,159,.1);
     border-radius: 300px;
     border-width:1px;
+    z-index: 9999;
     
 }
 
@@ -138,6 +189,8 @@
     font-size: 18px;
     letter-spacing: 0.5px;
     font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 a:after{
@@ -157,7 +210,7 @@ a:hover::after{
     
 }
 
-h1{
+h2{
   margin: auto;
   padding-left: 400px;
   padding-right: 400px;
@@ -317,6 +370,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 550px;
+    margin-bottom: 60px;
 }
 
 
