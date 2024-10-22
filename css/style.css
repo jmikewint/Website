@@ -1,3 +1,6 @@
+.body{
+    background-color: rgba(14,14,14,255);
+}
 
 #bg{
   position: absolute;
@@ -76,7 +79,10 @@
     
 }
 
-
+.dark-mode {
+    background-color: rgba(14,14,14,255);
+    color: white;
+  }
 
 
 .a{
@@ -273,6 +279,7 @@ h1{
 
 
 
+/* From Uiverse.io by Creatlydev */ 
 .button {
   line-height: 1;
   text-decoration: none;
@@ -329,4 +336,15 @@ h1{
   transform: translate(0);
 }
 
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
 
