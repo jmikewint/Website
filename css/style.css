@@ -1,4 +1,4 @@
-.body{
+body{
     background-color: black;
 }
 
@@ -208,4 +208,10 @@ a:hover::after{
 }
 h1{
     color: rgba(207,187,159,255);
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
