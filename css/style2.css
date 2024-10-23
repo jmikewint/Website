@@ -2,28 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
 
 @font-face{
-  font-family: "myfont";
-  src: url("Fonts/Skinny.woff") format('woff');
+  font-family: 'myfont';
+  src: url("Fon") format('woff');
 }
 
 @font-face{
-  font-family: "myfont2";
+  font-family: "myfont_2";
   src: url("Fonts/Cursive.woff") format('woff');
 }
 
 @font-face{
-  font-family: "myfont3";
+  font-family: "myfont_3";
   src: url("Fonts/Weird.woff") format('woff');
 }
 
 @font-face {
-  font-family: "myfont4";
+  font-family: "myfont_4";
   src: url("Fonts/iXpaxEenVVRK6V44PcVbra2128.ttf");
 }
 
@@ -81,7 +80,12 @@ html{
 
 
 
+.container2{
+  display: flex;
+  padding-left: 360px;
+  padding-right: 360px;
 
+}
 
 .arr{
   position: relative;
@@ -94,11 +98,12 @@ html{
   border-color:rgba(218, 197, 167, 0.05);
   transition: 0.4s ease;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-
+.arr_text{
+  height: 100px;
+  width: 100px;
+}
 
 
 .box{
@@ -234,6 +239,7 @@ a:hover::after{
   margin-bottom: -40px;
   text-align: center;
 }
+
 .title2{
   font-size: 130px;
   text-align: center;
