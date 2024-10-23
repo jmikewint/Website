@@ -7,23 +7,23 @@
 
 
 @font-face{
-  font-family: 'myfont';
-  src: url("Fon") format('woff');
+  font-family: 'thin_font';
+  src: url("Skinny.woff") format('woff');
 }
 
 @font-face{
-  font-family: "myfont_2";
-  src: url("Fonts/Cursive.woff") format('woff');
+  font-family: "thick_font";
+  src: url("Cursive.woff2") format('woff2');
 }
 
 @font-face{
-  font-family: "myfont_3";
-  src: url("Fonts/Weird.woff") format('woff');
+  font-family: "weird_font";
+  src: url("Weird.woff") format('woff');
 }
 
 @font-face {
-  font-family: "myfont_4";
-  src: url("Fonts/iXpaxEenVVRK6V44PcVbra2128.ttf");
+  font-family: "cursive_font";
+  src: url("iXpaxEenVVRK6V44PcVbra2128.ttf");
 }
 
 
@@ -44,7 +44,17 @@ html{
   left: 0;
   bottom: 0;
   right: 0;
-  min-height: 105vh;
+  min-height: 119vh;
+  z-index: 0;
+}
+
+.top-row h6{
+  font-family: 'thin_font';
+  letter-spacing: 1px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-weight: 1;
 }
 
 .navbar{
@@ -81,30 +91,67 @@ html{
 
 
 .container2{
+  position: relative;
+  width: 300px;
+  height: 40px;
   display: flex;
-  padding-left: 360px;
-  padding-right: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0px;
+  left: 0px;
+  padding-left: 70px;
+  z-index: 999;
+}
 
+.title{
+  font-size: 140px;
+  margin-bottom: -40px;
+  text-align: center;
+  font-family: 'thin_font';
+}
+
+.title2{
+  font-size: 130px;
+  text-align: center;
+  font-family: 'cursive_font';
+}
+
+.title_info{
+  font-family: 'weird_font';
+  font-weight: 10;
+  font-size: 25px;
+  margin-bottom: 50px;
 }
 
 .arr{
   position: relative;
-  background: rgba(218, 197, 167, 0.15);
+  background-color: rgba(218, 197, 167, 0.05);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;
-  border-color:rgba(218, 197, 167, 0.05);
+  border-color:rgba(218, 197, 167, 0.15);
   transition: 0.4s ease;
   cursor: pointer;
 }
 
 .arr_text{
-  height: 100px;
-  width: 100px;
+  font-size:13px;
+  font-family: 'thin_font';
+  width: 140px;
+  margin-left: 13px;
+  margin-top: 11px;
+  color: rgba(218, 197, 167, 1);
+  letter-spacing: 1px;
 }
 
+
+.container2:hover a .arr{
+  background-color: rgba(218, 197, 167, 0.1);
+  border-color:rgba(218, 197, 167, 0.3);
+
+}
 
 .box{
   width: 450px;
@@ -167,7 +214,12 @@ html{
   margin-bottom: 1px;
 }
 
-
+section .container h2{
+  font-family: 'thin_font';
+  font-size: 60px;
+  font-weight: 1;
+  margin-bottom: 10px;
+}
 
 #info1{
   z-index: 10;
@@ -193,7 +245,7 @@ html{
 
 }
 
-.a{
+.navbar a{
 
   text-decoration: none;
   position: relative;
@@ -206,7 +258,7 @@ html{
   margin-right: 10px;
 }
 
-a:after{
+.navbar a:after{
   content: "";
   position: absolute;
   background-color: rgba(207,187,159,255);
@@ -218,7 +270,7 @@ a:after{
   
 }
 
-a:hover::after{
+.navbar a:hover::after{
   width: 100%;
   
 }
@@ -234,45 +286,36 @@ a:hover::after{
   margin-bottom: 60px;
 }
 
-.title{
-  font-size: 140px;
-  margin-bottom: -40px;
-  text-align: center;
-}
-
-.title2{
-  font-size: 130px;
-  text-align: center;
-}
-
-
-
 
 section{
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section:nth-child(1){
-  color: #162d68;
+  color: rgba(218, 197, 167, 1);
 }
 
 section:nth-child(2){
   color: #1D212B;
   display:block;
   padding-top: 150px;
-  background-color: rgba(30,30,30,255);
+  background-color: rgba(15,15,15,255);
+  margin-bottom: 100px;
 }
 
 section:nth-child(3){
   background-color: rgba(15,15,15,255);
-  color: #1D212B;
+  color: rgba(218, 197, 167, 1);
+  padding-top: 20vh;
+  margin-bottom: -20vh;
 }
 
 section:nth-child(4){
   color: #1D212B;
+  padding-top: 20vh;
   background-color: rgba(15,15,15,255);
 }
 
@@ -320,18 +363,20 @@ section .cards .text-card{
 section .container .blocks .box .number{
   color: rgba(207,187,159,0.7); 
   margin-bottom: 0;
+  font-size: 13px;
+  font-family: 'thin_font';
 }
 section .container .blocks .box .heading{
   color: rgba(207,187,159);
   font-size: 26px;
   margin-bottom: 6px; 
   text-transform: uppercase;
-  font-family: 'myfont';
+  font-family: 'thin_font';
 }
 section .container .blocks .box .text{
   color: rgba(207,187,159);  
   margin-bottom: 20px;
-  font-family: 'myfont3';
+  font-family: 'weird_font';
   line-height: 30px;
   font-weight: 100px
   ;
