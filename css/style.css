@@ -1,5 +1,5 @@
 .body{
-    background-color: rgba(14,14,14,255);
+    background-color: white;
 }
 
 #bg{
@@ -53,6 +53,20 @@
   margin-right: 15px;
   background-color: rgba(24,23,22,255);
 }
+
+.numbox{
+    width: 70%;
+    height: 40%;
+    border-style: solid;
+    border-color:rgba(207,187,159,.1);
+    border-width: 1px;
+    border-radius: 20;
+    padding: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(24,23,22,255);
+  }
 
 
 .container{
