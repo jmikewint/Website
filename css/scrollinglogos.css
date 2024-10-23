@@ -49,19 +49,19 @@
   }
   
   .marquee__item:nth-child(4n) {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0rem;
   }
   
   .marquee__item:nth-child(4n + 1) {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0rem;
   }
   
   .marquee__item:nth-child(4n + 2) {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0rem;
   }
   
   .marquee__item:nth-child(4n + 3) {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0rem;
   }
   
   .marquee--8 .marquee__item:nth-of-type(1) {
