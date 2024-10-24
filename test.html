@@ -8,66 +8,37 @@
 
 </head>
 <body>
-    <nav>
-        <ul id="mainNav">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>    
-        </ul>
-    </nav>
-    <section id="home"><h2>Home</h2></section>
-    <section id="work" data-sr><h2>Work</h2></section>
-    <section id="about"><h2>About</h2></section>
-    <section id="contact"><h2>Contact</h2></section>
-    <script type="text/javascript">
-        // Cache selectors
-        var lastId,
-        topMenu = $("#mainNav"),
-        topMenuHeight = topMenu.outerHeight()+1,
-        // All list items
-        menuItems = topMenu.find("a"),
-        // Anchors corresponding to menu items
-        scrollItems = menuItems.map(function(){
-        var item = $($(this).attr("href"));
-            if (item.length) { return item; }
-        });
+    <div class="side-bar">
+        <nav class="navbar">
+            <ul id="mainNav">
+              <li><a href="#about">HOME</a></li>
+              <li><a href="#products">PROJECTS</a></li>
+              <li><a href="#services">SKILLS</a></li>
+              <li><a href="#contact">EXPERIENCE</a></li>
+              <li><a href="#gallery">EDUCATION</a></li>
+            </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+        <section id="about">
+          <h1>About</h1>
+        </section>
+        <section id="products">
+          <h1>Products</h1>
+        </section>
+        <section id="services">
+          <h1>Services</h1>
+        </section>
+        <section id="contact">
+          <h1>Contact</h1>
+        </section>
+        <section id="gallery">
+          <h1>Gallery</h1>
+        </section>
+      </div>
 
-        // Bind click handler to menu items
-        // so we can get a fancy scroll animation
-        menuItems.click(function(e){
-        var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-        $('html, body').stop().animate({ 
-            scrollTop: offsetTop
-        }, 850);
-        e.preventDefault();
-        });
+      <script type="text/javascript" src="test.js"></script>
 
-        // Bind to scroll
-        $(window).scroll(function(){
-        // Get container scroll position
-        var fromTop = $(this).scrollTop()+topMenuHeight;
-        
-        // Get id of current scroll item
-        var cur = scrollItems.map(function(){
-            if ($(this).offset().top < fromTop)
-            return this;
-        });
-        // Get the id of the current element
-        cur = cur[cur.length-1];
-        var id = cur && cur.length ? cur[0].id : "";
-        
-        if (lastId !== id) {
-            lastId = id;
-            // Set/remove active class
-            menuItems
-                .parent().removeClass("active")
-                .end().filter("[href=#"+id+"]").parent().addClass("active");
-        }                   
-        });
-
-      </script>    
 </body>
 </html>
 
