@@ -20,6 +20,9 @@
 </head>
 <body>
 
+
+  <!--Grainy Filter-->
+
     
   <nav class="navbar">
       <ul id="mainNav">
@@ -132,29 +135,45 @@
   </section>
 
   <section id="Projects">
+    <div>
     <div class="container reveal" style="margin-bottom: 90px;">
       <div class="top-row">
         <h6 class="our-projects" style="color: rgb(207,187,159);      ">Our Projects</h6>
-        <p style="margin-top: auto; margin-bottom: auto; margin-left: 1000px;">SEE ALL</p>
+        <div class="box_button">
+          <a href="#Knowledge" style="display: flex;   text-decoration: none;">
+            <div class="arr down"  id="button">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                  <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                </g>
+              </svg>      
+            </div>  
+            <div class="arr_text" for="button">
+              <p>
+                ABOUT DEVELOPMENT
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="proj_row1">
-        <div class="proj">
-            <div id="navi" class="test glass">
-                <p style="margin-top:auto; margin-bottom: auto; font-size: 22px; color:rgba(207,187,159,1); margin-left: 10px; margin-right: 430px;">Space</p>
-                <p style="margin-top: auto; margin-bottom: auto;  font-size: 14px; color:rgba(207,187,159,1); text-transform: uppercase;">Web Design</p>
+        <div class="proj fill">
+            <div id="navi" class=" glass">
+                <p class="project_name">Space</p>
+                <p class="project_about">Web Design</p>
             </div>
-            <div id="info1" class="fill">
-                <img  style="margin-top: 0;" class="img" src="computer1.jpg" alt="computer">
+            <div id="info1">
+                <img src="computer1.jpg" alt="computer">
             </div>
         </div>
-        <div class="proj">
-            <div id="navi" class="test glass">
-                <p style="margin-top:auto; margin-bottom: auto; font-size: 22px; color:rgba(207,187,159,1); margin-left: 10px; margin-right: 430px;">Space</p>
-                <p style="margin-top: auto; margin-bottom: auto;  font-size: 14px; color:rgba(207,187,159,1); text-transform: uppercase;">Web Design</p>
+        <div class="proj fill">
+            <div id="navi" class=" glass">
+                <p class="project_name">Space</p>
+                <p class="project_about">Web Design</p>
             </div>
-            <div id="info1" class="fill">
-                <img  style="margin-top: 0;" class="img" src="phone.jpg" alt="computer">
+            <div id="info1">
+                <img src="phone.jpg" alt="computer">
             </div>
         </div>
     </div>
@@ -162,27 +181,27 @@
     
     <div class="container reveal">
       <div class="proj_row2">
-        <div class="proj">
-            <div id="navi" class="test glass">
-                <p style="margin-top:auto; margin-bottom: auto; font-size: 22px; color:rgba(207,187,159,1); margin-left: 10px; margin-right: 430px;">Space</p>
-                <p style="margin-top: auto; margin-bottom: auto;  font-size: 14px; color:rgba(207,187,159,1); text-transform: uppercase;">Web Design</p>
-            </div>
-            <div id="info1"class="fill">
-                <img  style="margin-top: 0;" class="img" src="phone2.jpg" alt="computer">
+        <div class="proj fill">
+            <div id="navi" class="glass">
+              <p class="project_name">Space</p>
+              <p class="project_about">Web Design</p>
+              </div>
+            <div id="info1">
+                <img src="phone2.jpg" alt="computer">
             </div>
         </div>
-        <div class="proj">
-            <div id="navi" class="test glass">
-                <p style="margin-top:auto; margin-bottom: auto; font-size: 22px; color:rgba(207,187,159,1); margin-left: 10px; margin-right: 430px;">Space</p>
-                <p style="margin-top: auto; margin-bottom: auto;  font-size: 14px; color:rgba(207,187,159,1); text-transform: uppercase;">Web Design</p>
-            </div>
-            <div id="info1"class="fill">
-                <img  style="margin-top: 0;" class="img" src="computer2.jpg" alt="computer">
+        <div class="proj fill">
+            <div id="navi" class=" glass">
+              <p class="project_name">Space</p>
+              <p class="project_about">Web Design</p>
+              </div>
+            <div id="info1">
+                <img  src="computer2.jpg" alt="computer">
             </div>
         </div>
       </div>
     </div>
-
+  </div>
   </section>
 
 
@@ -230,6 +249,19 @@
         }
       </script>
 
+<!--Grain Filter-->
+  <svg>
+    <filter id="noiseFilter">
+      <feTurbulence 
+      type="fractalNoise"
+      baseFrequency="8.29"
+      numOctaves="1"
+      stitchTiles="stich"
+      x="0"
+      y="0"/>
+      <feBlend in="SourceGraphic" mode="color-burn"/>
+    </filter>
+  </svg>
 
 
 </body>
