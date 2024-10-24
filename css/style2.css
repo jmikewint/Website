@@ -140,6 +140,7 @@ html{
   font-size:13px;
   font-family: 'thin_font';
   width: 140px;
+  height: 10px;
   margin-left: 13px;
   margin-top: 11px;
   color: rgba(218, 197, 167, 1);
@@ -378,11 +379,33 @@ section .container .blocks .box .text{
   margin-bottom: 20px;
   font-family: 'weird_font';
   line-height: 30px;
-  font-weight: 100px
-  ;
+  margin-bottom: 30px;
+
 }
 
+section .container .blocks .box .box_button{
+  height: 30px;
+}
 
+section .container .box_button:hover a .arr{
+  background-color: rgba(218, 197, 167, 0.1);
+  border-color:rgba(218, 197, 167, 0.3);
+  rotate: 270deg;
+}
+
+section .container .blocks .arr_text {
+  margin-top: 7px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 300px;
+}
+
+section .container .blocks .arr {
+height: 32px;
+width: 32px;
+rotate: 225deg;
+transition: .5s ease;
+}
 section .cards .text-card h3{
   font-size: 30px;
   text-align: center;
