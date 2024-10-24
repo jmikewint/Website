@@ -63,7 +63,7 @@ html{
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  height: 60px;
   width: 520px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -73,8 +73,6 @@ html{
   border-color:rgba(207,187,159,.2);
   border-radius: 300px;
   border-width:1px;
-  justify-content: center;
-
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(10px);
 
@@ -84,6 +82,51 @@ html{
   z-index: 1;
   right: 0;
   left: 0;
+  
+  ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    display:flex;
+    margin:0 auto;
+    li{
+      display:flex;
+      a{
+        text-decoration: none;
+        position: relative;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(207,187,159);
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &::after{
+          content: "";
+          position: absolute;
+          background-color: rgba(207,187,159,255);
+          height: 1px;
+          width: 0%;
+          left: 0px;
+          bottom:.2px;
+          transition: 0.3s;
+        }
+        &:hover::after{
+          width: 100%;  
+        }
+      }
+    }
+    .active a{
+      font-weight: bold;
+      color: rgba(217,197,169,255);;
+      border-bottom:1px solid  rgba(207,187,159,255);
+    }
+  }
+
+  
+
 }
 
 
@@ -246,35 +289,8 @@ section .container h2{
 
 }
 
-.navbar a{
 
-  text-decoration: none;
-  position: relative;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(207,187,159);
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  font-size: 13px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-.navbar a:after{
-  content: "";
-  position: absolute;
-  background-color: rgba(207,187,159,255);
-  height: 1px;
-  width: 0%;
-  left: 0px;
-  bottom: -3px;
-  transition: 0.3s;
-  
-}
-
-.navbar a:hover::after{
-  width: 100%;
-  
-}
 
 
 .img{
