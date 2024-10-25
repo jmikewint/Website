@@ -28,7 +28,9 @@
 
 
 
+
 body{
+  margin: 0;
   background-color: rgba(14,14,14,255);
 }
 
@@ -45,7 +47,7 @@ html{
   bottom: 0;
   right: 0;
   min-height: 119vh;
-  z-index: 0;
+  z-index: 1;
 }
 
 .top-row h6{
@@ -163,6 +165,14 @@ html{
   margin-bottom: 50px;
 }
 
+
+.Home{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 120vh;
+}
+
 .arr{
   position: relative;
   background-color: rgba(218, 197, 167, 0.05);
@@ -181,7 +191,7 @@ html{
   font-family: 'thin_font';
   width: 140px;
   height: 10px;
-  margin-left: 13px;
+  margin-left: 6px;
   margin-top: 11px;
   color: rgba(218, 197, 167, 1);
   letter-spacing: 1px;
@@ -305,21 +315,13 @@ section .container h2{
 }
 
 
-.img{
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 550px;
-  margin-bottom: 60px;
-}
-
 
 section{
   min-height: 70vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  display: flex;
 }
 
 section:nth-child(1){
@@ -330,8 +332,7 @@ section:nth-child(2){
   color: #1D212B;
   display:block;
   padding-top: 150px;
-  background-color: rgba(15,15,15,255);
-  margin-bottom: 100px;
+  background-color: rgba(218,197,167,.05);
 }
 
 section:nth-child(3){
@@ -372,6 +373,9 @@ section .cards{
 
 section .blocks{
   display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .reveal{
@@ -465,6 +469,92 @@ section .cards .text-card h3{
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+
+
+
+.Knowledge{
+  display:block;
+}
+
+.menu {
+  margin-top: -180px;
+  margin-bottom: 250px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	--marquee-width: 100vw;
+	--offset: 20vw;
+	--move-initial: calc(-20% + var(--offset));
+	--move-final: calc(-53.7% + var(--offset));
+	--item-font-size: 10vw;
+	counter-reset: menu;
+  border-style: solid;
+  border-top-width:1px;
+  border-bottom-width:1px;
+  border-left-width:0px;
+  border-right-width:0px;
+  border-color:rgba(207,187,159,0.2);
+  padding: 20px;
+  background-color: rgba(218,197,167,.05);
+  }
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marquee2 {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.marquee__inner {
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 5.5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.marquee2 .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marquee2 span {
+  text-align: center;
+  white-space: nowrap;
+	font-size: 20px;
+	padding: 0 1vw;
+	font-weight: 900;
+	line-height: 1.15;
+  letter-spacing: 2px;
+  font-family: 'thin_font';
+  text-transform: uppercase;
+  color: rgba(218, 197, 167, 1);
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+
+
+
+
+
 
 @media (max-width:  900px){
   section h1{
