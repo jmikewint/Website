@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal Website Elements On Scroll</title>
+  <link rel="stylesheet" href="test2.css"/>
+  <link rel="stylesheet" href="css/scrollinglogos.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+   <!--Fonts For Website-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+   
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul id="mainNav">
+          <li><a href="#Home">HOME</a></li>
+          <li style="margin-right: -18px;"><a href="#Knowledge"></a></li>
+          <li><a href="#Projects">PROJECTS</a></li>
+          <li><a href="#Skills">SKILLS</a></li>
+          <li><a href="#Experience">EXPERIENCE</a></li>
+          <li><a href="#About">ABOUT</a></li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+    <div class="container">
+      <section class="one clearfix">
+          <div class="left">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="right">
+        <div class="right-child">
+          <h2>Scroll</h2>
+         
+        </div>
+      </div>
+      </section>
+    
+      <div class="bottom">
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/java.js"></script>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+       function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+  
+          for(var i = 0; i< reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 100;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+        }
+    }
+    </script>
+
+    <script type="text/javascript" src="test2.js"></script>
+
+  <!--Grain Filter-->
+    <svg>
+      <filter id="noiseFilter">
+        <feTurbulence 
+        type="fractalNoise"
+        baseFrequency="8.29"
+        numOctaves="1"
+        stitchTiles="stich"
+        x="0"
+        y="0"/>
+        <feBlend in="SourceGraphic" mode="color-burn"/>
+      </filter>
+    </svg>
+
+
+</body>
+</html>

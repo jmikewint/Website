@@ -4,11 +4,12 @@ $(window).resize(reOrder)
 function reOrder() {
   var mq = window.matchMedia("(min-width: 992px)");
   if (mq.matches) {
-    $('.left-child').addClass('customm');
+    $('.right-child').addClass('customm');
+    $('.right-child h2').text('Scroll')
     var scroll = $(window).scrollTop(),
       topContent = $('.one').position().top - 25,
-      sectionHeight = $('.right').height(),
-      rightHeight = $('.left-child').height(),
+      sectionHeight = $('.left').height(),
+      rightHeight = $('.right-child').height(),
       bottomContent = topContent + sectionHeight - rightHeight - 45;
 
     if (scroll > topContent && scroll < bottomContent) {
@@ -19,7 +20,7 @@ function reOrder() {
       $('.customm').removeClass('posFix');
     }
   } else {
-    $('.left-child').removeClass('customm posAbs posFix');
-    $('.left-child h2').text("fixed")
+    $('.right-child').removeClass('customm posAbs posFix');
+    $('.right-child h2').text("fixed")
   }
 }
