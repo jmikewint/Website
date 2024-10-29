@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reveal Website Elements On Scroll</title>
-  <link rel="stylesheet" href="css/style2.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/scrollinglogos.css">
 
 
@@ -39,10 +39,10 @@
     <section id="Home" class="Home">
       <div id="bg" class="bg"></div>
       <div class="Logo">
-        <img src="Images/Logo.png" alt="Logo" class="background">
+        <img src="Images/Logo.png" alt="Logo" class="background fade-in2 one">
       </div>
-      <h1  class="title">Web Designers</h1> <h1 class = "title2">& Developers</h1>
-      <h2 class="title_info">
+      <h1  class="title fade-in one">Web Designers</h1> <h1 class = "title2 fade-in one">& Developers</h1>
+      <h2 class="title_info fade-in one">
         Premium Web Design, Development, and SEO <br />services to help your business stand out.
       </h2> 
       <div class="container2">
@@ -114,11 +114,11 @@
 
     <section id="Knowledge" class="Knowledge">
     
-      <div class="container reveal">
-        <h2>Who We Are</h2>
+      <div class="container">
+        <h2 class="wwa reveal">Who We Are</h2>
 
         <div class="contain">
-          <div class="Dami">
+          <div class="Dami reveal">
             <div class="profile_picture fill"><img src="Images/Dami.jpg"></div>
             <div class="name">
               <h1 class="top_name">Dami</h1>
@@ -129,7 +129,7 @@
             </div>
           
             <div class="box_button">
-              <a href="#Knowledge" style="display: flex;   text-decoration: none;">
+              <a href="Dami.html" style="display: flex;   text-decoration: none;">
                 <div class="arr down"  id="button">
                   <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
                     <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
@@ -139,7 +139,7 @@
                 </div>  
                 <div class="arr_text" for="button">
                   <p>
-                    ABOUT WEB DESIGN
+                    ABOUT ME
                   </p>
                 </div>
               </a>
@@ -147,7 +147,7 @@
 
           </div>
       
-          <div class="Jayden">
+          <div class="Jayden reveal">
             <div class="profile_picture fill"><img src="Images/Jayden.jpg"></div>
             <div class="name">
               <h1 class="top_name">Jayden</h1>
@@ -183,10 +183,10 @@
 
 
 
-        <div class="container reveal">
-          <h2>What We Know</h2>
+        <div class="WWK container">
+          <h2 class="reveal">What We Know</h2>
           <div class="blocks">
-          <div class="box">
+          <div class="box reveal">
               <p class="number">01</p>
               <p class="heading">Web Design</p>
               <p class="text">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
@@ -207,7 +207,7 @@
                 </a>
               </div>
             </div>
-          <div class="box">
+          <div class="box reveal">
               <p class="number">02</p>
               <p class="heading">Development</p>
               <p class="text" >Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
@@ -228,7 +228,7 @@
                 </a>
               </div>
             </div>
-          <div class="box">
+          <div class="box reveal">
               <p class="number">03</p>
               <p class="heading">Web Design</p>
               <p class="text">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
@@ -253,92 +253,236 @@
         </div>
     </section>
 
-    <section id="Projects">
-      <div>
-      <div class="container reveal" style="margin-bottom: 90px;">
-        <div class="top-row">
-          <h6 class="our-projects" style="color: rgb(207,187,159);      ">Our Projects</h6>
-          <div class="box_button">
-            <a href="#Knowledge" style="display: flex;   text-decoration: none;">
-              <div class="arr down"  id="button">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
-                  <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
-                    <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
-                  </g>
-                </svg>      
-              </div>  
-              <div class="arr_text" for="button">
-                <p>
-                  SEE ALL
-                </p>
-              </div>
-            </a>
+    <section id="Projects" class="Projects">
+        <div class="container" style="margin-bottom: 90px;">
+          <div class="top-row">
+            <h6 class="our-projects" style="color: rgb(207,187,159);">Our Projects</h6>
+            <div class="box_button">
+              <a href="#Knowledge">
+                <div class="arr down"  id="button">
+                  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                    <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                      <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                    </g>
+                  </svg>      
+                </div>  
+                <div class="arr_text" for="button">
+                  <p>
+                    SEE ALL
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="proj_row1">
-          <div class="proj fill">
-              <div id="navi" class=" glass">
-                  <p class="project_name">Space</p>
-                  <p class="project_about">Web Design</p>
-              </div>
-              <div id="info1">
-                  <img src="Images/computer1.jpg" alt="computer">
-              </div>
-          </div>
-          <div class="proj fill">
-              <div id="navi" class=" glass">
-                  <p class="project_name">Space</p>
-                  <p class="project_about">Web Design</p>
-              </div>
-              <div id="info1">
-                  <img src="Images/computer2.jpg" alt="computer">
-              </div>
-          </div>
-      </div>
+          <div class="proj_row1">
+            <div class="check reveal">
+              <a href="Dami.html" class="proj2 fill"  >
+                <div class="box_button">
+                    <div class="arr down"  id="button">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                        <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                          <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                        </g>
+                      </svg>      
+                    </div>  
+                </div>
+                <div id="navi" class=" glass">
+                    <p class="project_name">Space</p>
+                    <p class="project_about">Web Design</p>
+                </div>
+                <div id="info1">
+                    <img src="Images/computer1.jpg" alt="computer">
+                </div>
+              </a>
+            </div>
+
+            <div class="check reveal">
+              <a class="proj fill">
+                <div href="Dami.html" class="box_button">
+                  <div class="arr down"  id="button">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                      <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                        <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                      </g>
+                    </svg>      
+                  </div>  
+                </div>
+                <div id="navi" class=" glass">
+                    <p class="project_name">Space</p>
+                    <p class="project_about">Web Design</p>
+                </div>
+                <div id="info1">
+                    <img src="Images/computer2.jpg" alt="computer">
+                </div>
+              </a>
+            </div>
+        </div>
 
       
-      <div class="container reveal">
-        <div class="proj_row2">
-          <div class="proj fill">
-              <div id="navi" class="glass">
-                <p class="project_name">Space</p>
-                <p class="project_about">Web Design</p>
+        <div class="container">
+          <div class="proj_row2">
+            <div class="check reveal">
+              <a href="Dami.html" class="proj2 fill">
+                <div class="box_button">
+                  <div class="arr down"  id="button">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                      <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                        <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                      </g>
+                    </svg>      
+                  </div>  
                 </div>
-              <div id="info1">
-                  <img src="Images/phone.jpg" alt="computer">
-              </div>
-          </div>
-          <div class="proj fill">
-              <div id="navi" class=" glass">
-                <p class="project_name">Space</p>
-                <p class="project_about">Web Design</p>
+                <div id="navi" class="glass">
+                  <p class="project_name">Space</p>
+                  <p class="project_about">Web Design</p>
+                  </div>
+                <div id="info1">
+                    <img src="Images/phone.jpg" alt="computer">
                 </div>
-              <div id="info1">
-                  <img  src="Images/phone2.jpg" alt="computer">
-              </div>
+              </a>
+            </div>
+            <div class="check reveal">
+              <a href="Dami.html" class="proj fill">
+                <div class="box_button">
+                  <div class="arr down"  id="button">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 5px; user-select: none; width: 70%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                      <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                        <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+                      </g>
+                    </svg>      
+                  </div>  
+                </div>
+                <div id="navi" class=" glass">
+                  <p class="project_name">Space</p>
+                  <p class="project_about">Web Design</p>
+                  </div>
+                <div id="info1">
+                    <img  src="Images/phone2.jpg" alt="computer">
+                </div>
+              </a>
+            </div>
+
           </div>
         </div>
-      </div>
-    </div>
     </section>
 
 
-      <section id="Skills">
-        <div class="container reveal">
-          <h2>Our Skills</h2>
-            <div style="width: 1900px;">
-              <div class="marquee marquee--6">
-                <img class="marquee__item" src="Images/JavaScript.png" width="90" height="90" alt="">
-                <img class="marquee__item" src="Images/Python.png" width="90" height="90" alt="">
-                <img class="marquee__item" src="Images/Html.png" width="90" height="90" alt="">
-                <img class="marquee__item" src="Images/Css.png" width="90" height="90" alt="">
-                <img class="marquee__item" src="Images/Java.png" width="90" height="90" alt="">
-                <img class="marquee__item" src="Images/Git.png" width="90" height="90" alt="">
-              </div>
+    <section id="Skills">
+      <div class="container reveal">
+        <h2>Our Skills</h2>
+          <div style="width: 1900px;">
+            <div class="marquee marquee--6">
+              <img class="marquee__item" src="Images/JavaScript.png" width="90" height="90" alt="">
+              <img class="marquee__item" src="Images/Python.png" width="90" height="90" alt="">
+              <img class="marquee__item" src="Images/Html.png" width="90" height="90" alt="">
+              <img class="marquee__item" src="Images/Css.png" width="90" height="90" alt="">
+              <img class="marquee__item" src="Images/Java.png" width="90" height="90" alt="">
+              <img class="marquee__item" src="Images/Git.png" width="90" height="90" alt="">
             </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="Experience" class="Experience">
+      <div class="top_text">
+      <p class="title_top reveal2">THE JOURNEY</p>
+      <h2 class="title reveal">Two Minds</h2><h2 class="title2 reveal">One Coding Journey</h2>
+      <p class="title_info reveal">A shared dive into coding basics, projects, and </br>new skills—learning and building together.</p>
+     </div>
+      <div class="container2">
+        <div class="arr down">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256" focusable="false" color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" style="margin-left: 10px; user-select: none; width: 50%; height: 100%; display: block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+            <g  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+              <path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"></path>
+            </g>
+          </svg>      
         </div>
-      </section>
+      </div>
+
+      <div class="journey step1">
+        <div class="hidden"></div>
+        <div class="line">
+          <div class="outer">
+            <div class="inner"></div>
+          </div>
+          <div class="container2" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="arr down" style="display: flex;">
+              <p style="margin: auto;">01</p>     
+            </div>
+          </div>
+          <div class="outer2">
+            <div class="inner2"></div>
+          </div>
+        </div>
+        <div class="seen reveal3"></div>
+      </div>
+      <div class="journey step1">
+        <div class="seen reveal3"></div>
+        <div class="line">
+          <div class="outer">
+            <div class="inner"></div>
+          </div>
+          <div class="container2" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="arr down" style="display: flex;">
+              <p style="margin: auto;">02</p>     
+            </div>
+          </div>
+          <div class="outer2">
+            <div class="inner2"></div>
+          </div>
+        </div>
+        <div class="hidden"></div>
+      </div>
+      <div class="journey step1">
+        <div class="hidden"></div>
+        <div class="line">
+          <div class="outer">
+            <div class="inner"></div>
+          </div>
+          <div class="container2" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="arr down" style="display: flex;">
+              <p style="margin: auto;">03</p>     
+            </div>
+          </div>
+          <div class="outer2">
+            <div class="inner2"></div>
+          </div>
+        </div>
+        <div class="seen reveal3"></div>
+      </div>
+      <div class="journey step1">
+        <div class="seen reveal3"></div>
+        <div class="line">
+          <div class="outer">
+            <div class="inner"></div>
+          </div>
+          <div class="container2" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="arr down" style="display: flex;">
+              <p style="margin: auto;">04</p>     
+            </div>
+          </div>
+          <div class="outer2">
+            <div class="inner2"></div>
+          </div>
+        </div>
+        <div class="hidden"></div>
+      </div>
+      <div class="journey step1">
+        <div class="hidden"></div>
+        <div class="line">
+          <div class="outer">
+            <div class="inner"></div>
+          </div>
+          <div class="container2" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="arr down" style="display: flex;">
+              <p style="margin: auto;">05</p>     
+            </div>
+          </div>
+        </div>
+        <div class="seen reveal3"></div>
+      </div>
+    </section>
 
 
         <script type="text/javascript" src="js/particles.min.js"></script>
@@ -364,7 +508,40 @@
               }
             }
           }
+          window.addEventListener('scroll', reveal3);
+
+          function reveal3(){
+            var reveals = document.querySelectorAll('.reveal3');
+
+            for(var i = 0; i< reveals.length; i++){
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 200;
+
+              if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+              }
+            }
+          }
+
+          window.addEventListener('scroll', reveal2);
+
+          function reveal2(){
+            var reveals = document.querySelectorAll('.reveal2');
+
+            for(var i = 0; i< reveals.length; i++){
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 100;
+
+              if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+              }
+            }
+          }
         </script>
+
+
 
   <!--Grain Filter-->
     <svg>
