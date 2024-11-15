@@ -863,7 +863,7 @@ section:nth-child(2){
 }
 
 section:nth-child(3){
-  background-color: rgba(15,15,15,255);
+  background-color: rgba(14,14,14,255);
   color: rgba(218, 197, 167, 1);
   padding-top: 220px;
   margin-bottom: -20vh;
@@ -872,12 +872,12 @@ section:nth-child(3){
 section:nth-child(4){
   color: #1D212B;
   padding-top: 20vh;
-  background-color: rgba(15,15,15,255);
+  background-color: rgba(14,14,14,255);
 }
 section:nth-child(5){
   color: #1D212B;
   padding-top: 30vh;
-  background-color: rgba(15,15,15,255);
+  background-color: rgba(14,14,14,255);
 }
 section .container{
   margin: 0;

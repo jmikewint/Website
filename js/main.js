@@ -81,3 +81,19 @@ $(window).scroll(function(){
         .end().filter("[href=#"+id+"]").parent().addClass("active");
   }                   
 });
+
+
+var div = document.getElementById('available_on');
+var display = 1;
+
+function showAvailable(){
+  if(display == 1)
+  {
+    div.style.display = 'flex';
+    display = 0;
+  }
+  else{
+    div.style.display = 'none';
+    display = 1;
+  }
+}
